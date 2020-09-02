@@ -15,6 +15,17 @@
         </ul>
         <a href="#">Get Started</a>
       </div>
+
+      <div class="landing-text">
+        <h1>cardino</h1>
+        <p>Web Agency</p>
+      </div>
+
+      <div class="landing-image-group">
+          <img src="./assets/Group1.png" alt="Landing-image">
+          <img class="lig2" src="./assets/Group 2.png" alt="Landing-image">
+      </div>
+
       <div class="side-icons">
         <img src="./assets/icons/facebook.svg" alt="socials">
         <img src="./assets/icons/instagram.svg" alt="socials">
@@ -25,13 +36,20 @@
   </div>
 </template>
 
-<script>
-export default {
-  
-}
-</script>
-
 <style scoped>
+.landing-image-group{
+    position: absolute;
+    top: 150px;
+    left: 630px;
+}
+.landing-image-group img{
+  height: 400px;
+  margin-right: 20px;
+}
+.lig2{
+  margin-top: 30px;
+  position: absolute;
+}
 .landing{
   height: 500px;
   width: 100%;
@@ -70,6 +88,26 @@ export default {
 }
 .logo{
   padding-right: 25px;
-  border-right: 3px solid royalblue;
+  border-right: 2px solid royalblue;
+}
+.landing-text{
+   width: fit-content;
+   margin: 50px auto 50px 350px;
+   z-index: 2;
+   position: absolute;
+}
+.landing-text h1{
+  font-size: 120px;
+  margin: 0;
+  font-weight: bold;
+}
+.landing-text p{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  background-image: linear-gradient(royalblue, royalblue);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 60% 15px;
 }
 </style>
