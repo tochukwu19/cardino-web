@@ -73,11 +73,48 @@
         </div>
       </div>
     </section>
+
+    <section class="clients">
+      <div class="client-img-container">
+        <div class="client1">
+          <img src="./assets/clients logo/fusebox.png" alt="client-images">
+          <img src="./assets/clients logo/namtra.png" alt="client-images">
+          <img src="./assets/clients logo/proximo.png" alt="client-images">
+        </div>
+        <div class="client2">
+          <img src="./assets/clients logo/seotrust.png" alt="client-images">
+          <img src="./assets/clients logo/wti.png" alt="client-images">
+          <img src="./assets/clients logo/xponent21.png" alt="client-images">
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
 /* Bottom to Top Hierarchial Styling */
+/* Clients */
+.clients{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #65677c;
+}
+
+.clients img{
+  padding: 30px;
+  height: 70px;
+}
+
+.client1, .client2{
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 /* Why section */
 .why-text{
