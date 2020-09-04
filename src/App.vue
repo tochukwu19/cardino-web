@@ -118,11 +118,184 @@
         <img src="./assets/redarrow.png" alt="red-arrow">
       </div>
     </section>
+    <section class="portfolio">
+      <div class="portfolio-container">
+        <h1>Portfolio</h1>
+        <div class="portfolio-images">
+          <img class="pf1" src="./assets/Rectangle 30.png" alt="portfolio">
+          <img class="pf2" src="./assets/Rectangle 31.png" alt="portfolio"><br/>
+          <img class="pf3" src="./assets/Rectangle 32.png" alt="portfolio">
+        </div>
+        <div class="portfolio-btn">
+          <button>More Projects</button>
+          <img src="./assets/bluearrow.png" alt="blue-arrow">
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+        <div class="contact">
+          <div class="contact-container">
+              <h1>Contact Us</h1>
+              <p>We'll love to get started with you right away, shoot us a mail to start discussing</p>
+              <div class="contact-btn">
+                <button>Get started</button>
+                <img src="./assets/bluearrow.png" alt="blue-arrow">
+              </div>
+          </div>
+        </div>
+         <div class="bottom-nav">
+            <ul class="fnav">
+              <li>Home</li>
+              <li>About</li>
+              <li>Process</li>
+              <li>Packages</li>
+              <li>Testimonials</li>
+              <li>Portfolio</li>
+              <li>Team</li>
+              <li>Contact</li>
+            </ul>
+            <ul class="fside-icons">
+              <li><img src="./assets/icons/facebook.svg" alt="socials"></li>
+              <li><img src="./assets/icons/instagram.svg" alt="socials"></li>
+              <li><img src="./assets/icons/linkedin.svg" alt="socials"></li>
+              <li><img src="./assets/icons/twitter.svg" alt="socials"></li>
+            </ul>
+          </div>
+    </footer>
   </div>
 </template>
 
 <style scoped>
 /* Bottom to Top Hierarchial Styling */
+
+/* Footer */
+.fnav{
+  padding-left: 0px;
+}
+.bottom-nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.bottom-nav ul{
+  display: flex;
+}
+.bottom-nav li{
+  list-style-type: none;
+  margin: 12px;
+}
+.cta-img{
+  height: 350px;
+  width: 60%;
+  position: absolute;
+  z-index: -2;
+}
+.overlay{
+  background-color: #0F101E;
+  z-index: -1;
+  height: 350px;
+  width: 60%;
+  position: absolute;
+  opacity: 0.9;
+}
+footer{
+  height: 600px;
+  width: 100%;
+  background-color: #252626;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact{
+  width: 80%;
+  height: 350px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:linear-gradient(0deg, rgba(15, 16, 30, 0.9), rgba(15, 16, 30, 0.9)), url("./assets/cta img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  z-index: 3;
+}
+.contact p{
+  margin-top: 0px;
+}
+.contact-btn{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btn img{
+  position: relative;
+  left: -25px;
+  width: 60px;
+}
+.contact-btn button{
+  padding: 12px;
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid red;
+  font-size: 16px;
+  color: #fff;
+}
+/* Portfolio */
+.portfolio-btn{
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-btn img{
+  position: relative;
+  left: -20px;
+  width: 60px;
+}
+.portfolio-images img{
+    height: 400px;
+    margin: 20px;
+}
+.portfolio h1{
+    margin: 20px;
+}
+.portfolio-btn button{
+  padding: 12px;
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+.portfolio-container{
+  margin: 15px 0px 15px 0px;
+}
+
+.portfolio{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 17px;
+  width: 100%;
+}
 
 /* Testimonial */
 .test-button-group{
@@ -160,8 +333,8 @@
 }
 .test-image{
   background-color: red;
-  height: 260px;
-  width: 214px;
+  height: 255px;
+  width: 212px;
 }
 .test-image2{
   background-color: blue;
@@ -181,7 +354,7 @@
   top: 10px;
 }
 .test-text{
-  width: 350px;
+  width: 300px;
   margin-left: 20px;
 }
 .testimonial{
@@ -280,7 +453,7 @@
   width: 150px;
   background-color: transparent;
   border: 1px solid #000;
-  font-size: 14px;
+  font-size: 16px;
 }
 .content img{
   position: relative;
