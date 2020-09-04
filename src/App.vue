@@ -88,11 +88,116 @@
         </div>
       </div>
     </section>
+
+    <section class="testimonial">
+      <h1>Testimonials</h1>
+      <div class="testimonial-container">
+        <div class="test">
+          <div class="test-image">
+            <img src="./assets/clientimg1.png" alt="client-image">
+          </div>
+          <div class="test-text">
+            <p>I loved the experience at cardino. The whole process was seamless and the entire team made me feel so at home and of course they made an awesome website for my bakery. ALl the clients loved it and it helped get new customers.</p>
+            <h3>John Doe</h3>
+            <em>CEO Valid experts</em>
+          </div>
+        </div>
+        <div class="test">
+          <div class="test-image2">
+            <img src="./assets/clientimg2.png" alt="client-image">
+          </div>
+          <div class="test-text">
+            <p>I loved the experience at cardino. The whole process was seamless and the entire team made me feel so at home and of course they made an awesome website for my bakery. ALl the clients loved it and it helped get new customers.</p>
+            <h3>Dan Rodgers</h3>
+            <em>CEO Valid experts</em>
+          </div>
+        </div>
+      </div>   
+      <div class="test-button-group">
+        <button></button>
+        <img src="./assets/redarrow.png" alt="red-arrow">
+      </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
 /* Bottom to Top Hierarchial Styling */
+
+/* Testimonial */
+.test-button-group{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.test-button-group button{
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.test-button-group img{
+  position: relative;
+  left: -30px;
+}
+.testimonial-container{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.test-text p{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.test-text h3{
+  margin: 5px;
+}
+.test{
+  display: flex;
+  flex-direction: row;
+}
+.test-image{
+  background-color: red;
+  height: 260px;
+  width: 214px;
+}
+.test-image2{
+  background-color: blue;
+  height: 250px;
+  width: 207px;
+}
+.test-image img{
+  height: 250px;
+  position: relative;
+  left: -15px;
+  top: 10px;
+}
+.test-image2 img{
+  height: 230px;
+  position: relative;
+  left: -15px;
+  top: 10px;
+}
+.test-text{
+  width: 350px;
+  margin-left: 20px;
+}
+.testimonial{
+  background-color: #252626;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 17px;
+  height: 600px;
+  width: 100%;
+}
+
+
 /* Clients */
 .clients{
   height: 500px;
