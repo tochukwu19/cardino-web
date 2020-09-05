@@ -83,8 +83,8 @@
         </div>
         <div class="client2">
           <img src="./assets/clients logo/seotrust.png" alt="client-images">
-          <img src="./assets/clients logo/wti.png" alt="client-images">
           <img src="./assets/clients logo/xponent21.png" alt="client-images">
+          <img src="./assets/clients logo/wti.png" alt="client-images">
         </div>
       </div>
     </section>
@@ -211,6 +211,9 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("./assets/redx.png"), url("./assets/bluex.png");
+  background-position: left bottom, right top;
+  background-repeat: no-repeat;
 }
 .contact{
   width: 80%;
@@ -378,17 +381,21 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #65677c;
+  background-color: #fff;
+  background-image: url("./assets/parallelogram thingy.png"), url("./assets/parallelogram thingy.png");
+  background-position: left 447px, right -25px;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
 }
 
 .clients img{
-  padding: 30px;
+  padding: 37px;
   height: 70px;
 }
 
 .client1, .client2{
   border-bottom: 1px solid #afafaf;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -396,18 +403,18 @@ footer{
 
 /* Why section */
 .why-text{
-  width: 400px;
+  width: 700px;
   z-index: 5;
 }
 .why-text h1{
   font-size: 50px;
+  margin-bottom: 10px;
 }
 .why-img-container{
-    position: relative;
-    left: -150px;
+    width: 80%;
 }
 .why1{
-  height: 400px;
+  height: 350px;
   margin-right: -138px;
 }
 .why2{
@@ -423,13 +430,19 @@ footer{
   align-items: center;
   justify-content: center;
   font-size: 17px;
+  padding: 30px;
 }
 .why-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-left: 90px;
+  width: 80%;
+  background-image: url("./assets/linecross1.png"), url("./assets/linecross2.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  border: 30px solid transparent;
+  background-origin: border-box;
 }
 
 /* about section */
@@ -491,6 +504,9 @@ footer{
   background-color: #0F101E;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  background-image: url("./assets/blueline.svg"), url("./assets/redline.svg");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
 }
 .heading{
     display: flex;
