@@ -168,7 +168,28 @@
 
 <style scoped>
 /* Bottom to Top Hierarchial Styling */
+/* Media Queries */
 
+@media only screen and (max-width: 450px){
+  /* about */
+  .xter{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  /* Client */
+  .client1, .client2{
+    border-bottom: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  /* Why */
+  .why-img-container{
+    display: none;
+  }
+}
 /* Footer */
 .fnav{
   padding-left: 0px;
@@ -317,12 +338,6 @@ footer{
   position: relative;
   left: -30px;
 }
-.testimonial-container{
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
 .test-text p{
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
@@ -333,6 +348,9 @@ footer{
 .test{
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .test-image{
   background-color: red;
@@ -359,6 +377,14 @@ footer{
 .test-text{
   width: 300px;
   margin-left: 20px;
+  margin-right: 10px;
+}
+.testimonial-container{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .testimonial{
   background-color: #252626;
@@ -369,23 +395,26 @@ footer{
   justify-content: center;
   flex-direction: column;
   font-size: 17px;
-  height: 600px;
-  width: 100%;
+  height: auto;
+  padding: 25px;
+  width: 97%;
 }
 
 
 /* Clients */
 .clients{
-  height: 500px;
-  width: 100%;
+  height: auto;
+  padding: 20px;
+  width: 97%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   background-image: url("./assets/parallelogram thingy.png"), url("./assets/parallelogram thingy.png");
-  background-position: left 447px, right -25px;
+  background-position: left bottom, right top;
   background-repeat: no-repeat;
   background-size: 80px 80px;
+  background-origin: content-box;
 }
 
 .clients img{
@@ -398,6 +427,7 @@ footer{
   margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 
@@ -421,8 +451,8 @@ footer{
   height: 300px;
 }
 .why{
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 97%;
   background-color: #0F101E;
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -430,32 +460,35 @@ footer{
   align-items: center;
   justify-content: center;
   font-size: 17px;
-  padding: 30px;
+  padding: 20px;
+  background-image: url("./assets/linecross1.png"), url("./assets/linecross2.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-origin: content-box;
+
 }
 .why-container{
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 80%;
-  background-image: url("./assets/linecross1.png"), url("./assets/linecross2.png");
-  background-position: left top, right bottom;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  border: 30px solid transparent;
-  background-origin: border-box;
 }
 
 /* about section */
 .about{
-  height: 100vh;
+  height: auto;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 20px 0px 20px 0px;
+  flex-wrap: wrap;
 }
 .content{
   width: 300px;
+  margin-bottom: 20px;
 }
 .content h1{
   font-weight: bold;
@@ -477,6 +510,7 @@ footer{
   width: 500px;
   flex-wrap: wrap;
   justify-content: space-around;
+  z-index: 4;
 }
 .xter{
   width: 200px;
@@ -504,9 +538,9 @@ footer{
   background-color: #0F101E;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  background-image: url("./assets/blueline.svg"), url("./assets/redline.svg");
-  background-position: right top, left bottom;
-  background-repeat: no-repeat;
+  /* background-image: url("./assets/blueline.svg"), url("./assets/redline.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat; */
 }
 .heading{
     display: flex;
